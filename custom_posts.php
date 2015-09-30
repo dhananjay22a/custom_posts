@@ -140,11 +140,11 @@ License: GPLv2
 			add_filter('posts_where', '\dj\custom_post\filter_where');
 			
 			//Checking cache if data is available. And if so assign it to $news and avoid if part.
-			$news = get_transient('custom_posts_key');
+			$news = get_transient('custom_posts_key_'.$currentID);
 			if ($news === false) {
 				$news = new \WP_Query( $args );
 				//Adding data to cache
-				set_transient('custom_posts_key', $news, 3600 * 24);
+				set_transient('custom_posts_key_'.$currentID, $news, 3600 * 24);
 			}
 			
 			//Removing filter hook filter_where
