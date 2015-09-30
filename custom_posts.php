@@ -85,7 +85,7 @@ License: GPLv2
 				#pmc_custompost_type_main_div .widget_title_div { font-size:20px; background: #cccccc; color:#0088CC; text-align:center; }
 				#pmc_custompost_type_main_div .news_item_main_div {  font-size:12px; padding:5px; height:62px; }
 				#pmc_custompost_type_main_div .news_item_thumbnail{ width:52px; height:52px; padding:1px; float:left; }
-				#pmc_custompost_type_main_div .news_item_title { width:183px; height:37px; padding:0 5px; float:left; }
+				#pmc_custompost_type_main_div .news_item_title { width:296px; height:37px; padding:0 5px; float:left; }
 				#pmc_custompost_type_main_div .author_name { float:left; height:15px; font-size:10px; color:#7e7e7e; padding: 0 5px; }
      		</style>
  		<?php 
@@ -188,7 +188,7 @@ License: GPLv2
 						
 						//News Item title div
 						echo '<div style="color:'.$textColor.'; background:'.$bgColor.';" class="news_item_title" >';
-							?><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo $this->short_title(50); ?></a><br /><?php 
+							?><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo $this->short_title(100); ?></a><br /><?php 
 						echo '</div>';
 						//News item title div ends here
 						
